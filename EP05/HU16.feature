@@ -11,11 +11,11 @@ Feature: HU16 Como usuario deseo que la geolocalización reconozca los puntos de
     Scenario: EO2 Visualizar las zonas seguras 
         TA02
         Given me encuentro en la opción del geo localizador 
-        When  ingresó el nombre incorrecto de unza zona 
+        When  ingresó el nombre incorrecto de una zona 
         Then me muestra un mensaje advirtiendo que el nombre ingresado no existe.
         Examples:
          |usuario | ingreso nombre |resultado|                                                    |
-        |Pedro   |pongo nombre incorrecto  |me muestra un mensaje advirtiendo que el nombre ingresado no existe.|
+        |Pedro    |pongo nombre incorrecto  |me muestra un mensaje advirtiendo que el nombre ingresado no existe.|
     
 
      Scenario: EO3 Solicitó información en tiempo real
