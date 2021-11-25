@@ -5,8 +5,8 @@ Feature: HU16 Como usuario deseo que la geolocalización reconozca los puntos de
         When ingresó al geolocalizador de la app.
         Then me muestra la zona con su respectivo logo que identifica a una zona segura en todas las zonas del mapa.
         Examples:
-        |usuario | boton  geolocalizador|resultado|                                                    |
-        |Pedro   |presiono               |me muestra la zona con su respectivo logo que identifica a una zona segura en todas las zonas del mapa|
+        |usuario | boton  geolocalizador| Distrito    |resultado|                                                    |
+        |Pedro   |presiono              | La victoria |me muestra la zona con su respectivo logo que identifica a una zona segura en todas las zonas del mapa|
     
     Scenario: EO2 Visualizar las zonas seguras 
         TA02
@@ -14,8 +14,8 @@ Feature: HU16 Como usuario deseo que la geolocalización reconozca los puntos de
         When  ingresó el nombre incorrecto de una zona.
         Then me muestra un mensaje advirtiendo que el nombre ingresado no existe.
         Examples:
-        |usuario | ingreso nombre          |resultado                                                           |
-        |Pedro   |pongo nombre incorrecto  |me muestra un mensaje advirtiendo que el nombre ingresado no existe.|
+        |usuario | ingreso nombre          |Distrito     |resultado                                                           |
+        |Pedro   |pongo nombre incorrecto  |la vicptoria |me muestra un mensaje advirtiendo que el nombre ingresado no existe.|
     
 
      Scenario: EO3 Solicitó información en tiempo real
@@ -24,8 +24,8 @@ Feature: HU16 Como usuario deseo que la geolocalización reconozca los puntos de
         When solicito información actualizado y verídica de una determinada zona.
         Then este me permite visualizarlo en menos de 1 segundo.
         Examples:
-    |usuario | información de la zona |resultado|                                     
-    |Pedro   | ingreso                |me permite visualizarlo en menos de 1 segundo|
+    |usuario | información de la zona | Distrito  |resultado|                                     
+    |Pedro   | ingreso                |la victoria|me permite visualizarlo en menos de 1 segundo|
     
     
     Scenario: EO4 Visualizar la opción del geo localizador
