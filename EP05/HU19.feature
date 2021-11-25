@@ -13,5 +13,5 @@ Feature: HU19 Como ciudadano quiero conocer a detalle las zonas peligrosas de Li
         When ingresó en el botón de visualizar la lista de zonas peligrosas. 
         Then visualizó la lista desactualizada de las zonas más peligrosas de hace un mes.
         Examples:
-       |usuario | boton visualizar zona |resultado|                                                    |
-       |Pedro   |presiono               | visualizó la lista desactualizada de las zonas más peligrosas de hace un mes|
+       |usuario |Elija:Sur o Norte | boton visualizar zona |resultado|                                                    |
+       |Pedro   |Sur         |presiono               |visualizó la lista desactualizada de las zonas más peligrosas de hace un mes|
